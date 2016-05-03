@@ -1,0 +1,310 @@
+/*@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Chewy.ttf);
+}*/
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+	background: url(../img/bg5.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+
+/*	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;*/
+
+	/*background-color: black;*/
+	
+	/*font-weight: */
+	
+}
+
+body{
+	height:100%;
+	margin-top: 7rem;
+	font-family: Helvetica;
+	font-size: 12px;	
+}
+	
+
+
+h1 {
+	font-family: 'myFirstFont', cursive;
+	text-align: center;
+	color: white;
+	margin-top: 5rem;
+
+}
+
+
+.movie-logo{
+	margin-right: 1rem;
+}
+
+button{
+	background-color: #ccc;
+	color: white;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	border-radius: 5px;
+	transition: .5s ease-in background-color;
+	cursor: pointer;
+}
+
+
+
+
+
+/*input, select, textarea, button[type="submit"]{
+	font-size: 1.25rem;
+	padding: 1rem;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	margin-bottom: 1rem;
+	min-width: 400px;
+}*/
+
+.contact-form{
+	min-width: 400px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-blue{
+	background-color: #0D95FF;
+}
+
+.btn-blue:hover{
+	background-color: #042A7D;
+	/*font-size: 1.5rem;*/
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+
+#left-poster{
+	margin:0;
+	/*padding: 10px 0px 0px 0px;*/
+	background-color: #ccc;
+	background:rgba(0,0,0,.6);
+	/*opacity: 80%;*/
+}
+
+.poster-wrapper{
+		width: 32%;
+		height:auto;
+		padding: 12px;
+		display: inline-block;
+		color: white;
+		transition: .3s linear padding;
+		position: relative;
+		font-size: 15px;
+}
+
+.poster-wrapper h2{
+	color: #f0f0f0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.poster-wrapper:hover{
+	padding: 0px;
+	
+}
+
+.poster-wrapper img{
+	opacity: .8;
+	transition: .5s ease-in opacity;
+	border: 1px solid white;
+}
+
+.poster-wrapper img:hover{
+	opacity: 2;
+
+}
+
+.poster-selection{
+	text-align: center;
+}
+
+img{
+	/*width: 400px;*/
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li{
+	display: inline-block;
+	color: #ccc;
+	font-size: 1.2rem;
+	/*border: 1px solid white;*/
+	padding: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	/*border-radius: 5px;*/
+	cursor: pointer;
+	transition: all .4s ease-in;
+}
+
+nav ul li:hover	{
+	color: white;
+}
+
+nav{
+	background-color: #000000;
+	padding: 1px;
+	text-align: left;
+	position: fixed;
+	width:100%;
+	height: 8%;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;	
+}
+
+th, td{
+	border: 1px solid white;
+	color: white;
+	padding: 1rem;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-selection{
+	color: white;
+	text-align: left;
+	margin-right: 150px;
+	margin-left:  150px;
+}
+
+.content-wrapper img{
+	width: 20%;
+	opacity: .8;
+	border: 1px solid white;
+	/*position: justify;*/
+}
+
+.content-wrapper *{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*.content-selection{
+	text-align: right;
+}*/
+
+.content-p{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*.video-ultra{
+	width: 560px;
+	height: 315px;
+
+}*/
+
+/*.glyphicon.glyphicon-chevron-right.right-arrow {
+
+right:81%;
+
+}
+
+.carousel-inner.video-left {
+	width: 800px;
+	position: relative;
+	overflow: hidden;
+}*/
+
+
+footer{
+	background-color: #333;
+	text-align: center;
+	padding: 2rem;
+}
+
+footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li{
+	display: inline-block;
+	color: white;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+
+.banner-slider{
+	top:-2rem;
+	width:auto;
+}
+
+.contact-form{
+	text-align: center;
+}
+
+.video-indicators {
+	bottom: 10px;
+}
+
+.video-slider {
+	width: 30%;
+	margin: 2rem;
+	padding: auto;
+	display: inline-block;
+
+}
+
+.video-slider iframe{
+	/*position: absolute;*/
+	/*top: 0;
+	left: 0;*/
+	width: 100%;
+	height: 100%;
+}
+
+
+@media(max-width: 1120px){
+	.poster-wrapper h2{
+		font-size: 2rem;
+	}
+}
+
+
+@media (max-width: 750px){
+	.poster-wrapper h2{
+	font-size: 3rem;	
+	}
+	.poster-wrapper{
+	width:100%;
+	}
+}
