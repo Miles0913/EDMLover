@@ -32,7 +32,7 @@ video {
 
 #login-page{
 	width: 500px;
-	height: 350px;	
+	height: 250px;	
 	background: rgba(255,255,255,.4);
 	position: absolute;
 	z-index: 9;
@@ -77,6 +77,11 @@ video {
 
 .submit-btn{
 	margin-left: 270px;
+	position: relative;
+}
+
+.submit-btn:hover{
+	color: red;
 }
 
 form button{
