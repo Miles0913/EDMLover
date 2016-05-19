@@ -79,7 +79,7 @@ button{
 }*/
 
 textarea.form-control {
-    height: 17rem;
+    height: 10rem;
 }
 
 .contact-form{
@@ -200,12 +200,21 @@ nav ul{
 }
 
 #login-btn{
-	margin-bottom: 1rem;
-	margin-left:48rem;
-	border: 1px solid white;
-	border-radius: 5px;
-    padding: 6px;
+	padding: 19px;
+    display: inline-block;
 }
+
+/*Log in Windows Form's content */
+
+#login-form{
+	height: 270px;
+}
+
+.contact-form{
+	padding: 20px;
+}
+
+
 
 th, td{
 	border: 1px solid white;
@@ -264,16 +273,37 @@ right:81%;
 	overflow: hidden;
 }*/
 
+/*-----------------About html style----------------------*/
+.about-content p{
+	font-size: 14px;
+	margin:3rem;
+	color:#fff;
+	line-height: 2rem;
+}
 
+
+.about-content{
+	width: 800px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:rgba(0,0,0,0.5);
+}
+/*-----------------About html style----------------------*/
+
+
+/*-----------------Footer style----------------------*/
 footer{
-	background-color: #333;
-	text-align: center;
-	padding: 2rem;
+	margin-top: 3rem;
+	background-color:rgba(0,0,0,0.8);
+	text-align: right;
+	padding: 1rem;
 }
 
 footer ul{
 	margin: 0;
-	padding: 0;
+	padding-right: 3rem;
+	cursor: pointer;
 }
 
 footer ul li{
@@ -282,6 +312,13 @@ footer ul li{
 	margin: 0 1rem;
 	cursor: pointer;
 }
+
+.fa{
+	color:#fff;
+	margin-left: 1.5rem;
+}
+/*-----------------Footer style----------------------*/
+
 
 .banner-slider{
 	top:-2rem;

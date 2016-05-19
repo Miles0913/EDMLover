@@ -57,6 +57,7 @@ video {
 }
 
 .account-bar input{
+	color:#000;
 	background: none;
 	border:none;
 	outline: none;
