@@ -159,6 +159,8 @@ a{
 	color: white;
 }
 
+/*Nav Bar*/
+
 nav ul li{
 	display: inline-block;
 	color: #ccc;
@@ -273,14 +275,45 @@ right:81%;
 	overflow: hidden;
 }*/
 
+/* Top20 Artists  */
+
+.left_nav_wrapper img{
+	cursor: pointer;
+	opacity: .8;
+	transition: .3s ease-in opacity;
+}
+
+.left_nav_wrapper img:hover{
+	opacity: 2;
+
+}
+
+.left_nav_wrapper{
+	margin-left: 5rem;
+	margin-top:10rem;
+}
+
+.left_nav1{
+	width: 200px;
+	height:50px;
+
+}
+
+/*-----------------*/
+
+
+
 /*-----------------About html style----------------------*/
+.about-content h1{
+	padding-top: 1.5rem;
+}
+
 .about-content p{
 	font-size: 14px;
 	margin:3rem;
 	color:#fff;
 	line-height: 2rem;
 }
-
 
 .about-content{
 	width: 800px;
@@ -303,17 +336,16 @@ footer{
 footer ul{
 	margin: 0;
 	padding-right: 3rem;
-	cursor: pointer;
 }
 
 footer ul li{
 	display: inline-block;
 	color: white;
 	margin: 0 1rem;
-	cursor: pointer;
 }
 
 .fa{
+	cursor: pointer;
 	color:#fff;
 	margin-left: 1.5rem;
 }
