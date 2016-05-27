@@ -275,9 +275,9 @@ right:81%;
 	overflow: hidden;
 }*/
 
-/* Top20 Artists  */
-
+/*-----------------Top 20 Artists----------------------*/
 .left_nav_wrapper img{
+	margin-bottom: 1rem;
 	cursor: pointer;
 	opacity: .8;
 	transition: .3s ease-in opacity;
@@ -291,6 +291,10 @@ right:81%;
 .left_nav_wrapper{
 	margin-left: 5rem;
 	margin-top:10rem;
+}
+
+.left_nav1 h2{
+	color:blue;
 }
 
 .left_nav1{
@@ -327,7 +331,10 @@ right:81%;
 
 /*-----------------Footer style----------------------*/
 footer{
-	margin-top: 3rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color:rgba(0,0,0,0.8);
 	text-align: right;
 	padding: 1rem;
