@@ -12,7 +12,7 @@
 
 html, body{
 	height: 100%;
-	background: url(../img/bg5.jpg) no-repeat center center fixed;
+	background: url(../img/bg6.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -202,10 +202,10 @@ nav ul{
 	transition: all .2s ease-in;
 }
 
-#login-btn{
+/*#login-btn{
 	padding: 19px;
     display: inline-block;
-}
+}*/
 
 /*Log in Windows Form's content */
 
@@ -291,7 +291,7 @@ right:81%;
 .left_nav_wrapper h1{
 	font-family: 'Playball-Regular', cursive;
 	margin-left: -2rem;
-	margin-top: 5rem;
+	margin-top: 6rem;
 	color:white;	
 }
 
@@ -313,19 +313,46 @@ right:81%;
 	font-size: 15px;
 	color: white;
 	margin: 25px 5px 20px 25px;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 
 .top20_content{
-	float: right;
-	width: 900px;
-	height: 3000px;
+	
+	
+}
+
+.dvlm_content{
 	background-color: #ccc;
 	background:rgba(0,0,0,.6);
 	margin-top: 5rem;
 	margin-right: 5rem;
+	float: right;
+	width: 900px;
+	height: 800px;
+
 }
+
+.hardwell_content{
+	background-color: #ccc;
+	background:rgba(0,0,0,.6);
+	margin-top: 11rem;
+	margin-right: 5rem;
+	float: right;
+	width: 900px;
+	height: 750px;
+}
+
+.martin_content{
+	background-color: #ccc;
+	background:rgba(0,0,0,.6);
+	margin-top: 11rem;
+	margin-right: 5rem;
+	float: right;
+	width: 900px;
+	height: 750px;
+}
+
 
 
 /*-----------------*/
@@ -425,6 +452,7 @@ footer ul li{
        margin: 0;
        margin-top: 1rem;
     }
+
 }
 
 
