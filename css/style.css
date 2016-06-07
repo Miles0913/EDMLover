@@ -78,6 +78,26 @@ button{
 	min-width: 400px;
 }*/
 
+
+
+
+/*Log in btn and form */
+
+#login-btn:hover{
+	background-color: #ccccff;
+	color:#000;
+	transition: all .2s ease-in;
+}
+
+.contact-form h3{
+	float: left;
+	color:black;
+}
+
+.contact-form{
+	padding: 20px;
+}
+
 textarea.form-control {
     height: 10rem;
 }
@@ -90,12 +110,23 @@ textarea.form-control {
 }
 
 .btn-blue{
+	margin-left: 1.5rem;
 	background-color: #0D95FF;
 }
 
 .btn-blue:hover{
 	background-color: #042A7D;
 	/*font-size: 1.5rem;*/
+}
+
+.create_detail{
+	float: left;
+	text-align: left;
+	position: relative;
+    left: -4rem;
+}
+#create_btn{
+	margin-top: 8rem;
 }
 
 .modal-body {
@@ -196,26 +227,6 @@ nav ul{
 	padding: 0;	
 }
 
-#login-btn:hover{
-	background-color: #ccccff;
-	color:#000;
-	transition: all .2s ease-in;
-}
-
-/*#login-btn{
-	padding: 19px;
-    display: inline-block;
-}*/
-
-/*Log in Windows Form's content */
-
-#login-form{
-	height: 270px;
-}
-
-.contact-form{
-	padding: 20px;
-}
 
 
 

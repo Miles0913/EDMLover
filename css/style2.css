@@ -19,9 +19,6 @@ video {
   	opacity: .8;
 }
 
-#login-page {
-	color: white;
-}
 
 
 #login-page h1, h2, p{
@@ -31,9 +28,10 @@ video {
 }
 
 #login-page{
+	color: white;
 	width: 500px;
-	height: 250px;	
-	background: rgba(255,255,255,.4);
+	height: 270px;	
+	background: rgba(0,0,0,.4);
 	position: absolute;
 	z-index: 9;
 	top: 0;
@@ -76,9 +74,13 @@ video {
 	padding-left: 8px;
 }
 
+.submit-btn p{
+	float: right;
+	padding-top: 2rem;
+}
+
 .submit-btn{
 	margin-left: 270px;
-	position: relative;
 }
 
 .submit-btn:hover{
