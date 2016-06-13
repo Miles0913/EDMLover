@@ -29,8 +29,8 @@ video {
 
 #login-page{
 	color: white;
-	width: 500px;
-	height: 270px;	
+	width: 50%;
+	height: 40%;
 	background: rgba(0,0,0,.4);
 	position: absolute;
 	z-index: 9;
@@ -46,7 +46,7 @@ video {
 
 .account-bar{
 	background:#f4f4f4;
-	width: 300px;
+	width: 50%;
 	height: 25px;
 	border-radius: 10px;
 	margin: auto;
@@ -59,7 +59,7 @@ video {
 	background: none;
 	border:none;
 	outline: none;
-	width: 220px;
+	width: 70%;
 	margin-left: 10px;
 	font-size: 15px;
 }
@@ -75,16 +75,21 @@ video {
 }
 
 .submit-btn p{
-	float: right;
-	padding-top: 2rem;
+	padding-top: 1rem;
 }
 
 .submit-btn{
-	margin-left: 270px;
+	position: static;
+	float: right;
+	margin-right: 15rem;
 }
 
 .submit-btn:hover{
 	color: red;
+}
+
+#skip p:hover{
+	text-decoration: underline;
 }
 
 form button{
@@ -94,4 +99,17 @@ form button{
 	border:none;
 }
 
+
+@media(max-width: 1120px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (max-width: 767px){
+
+	
+}
 
