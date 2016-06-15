@@ -102,6 +102,8 @@ textarea.form-control {
     height: 10rem;
 }
 
+/*----------------------*/
+
 .contact-form{
 	min-width: 400px;
 	width: 40px;
@@ -193,6 +195,20 @@ a{
 
 /*Nav Bar*/
 
+.container-fluid{
+	padding-right: 4rem;
+}
+
+.dropdown-toggle:hover{
+	color: white;
+}
+
+.dropdown-toggle{
+	color: #ccc;
+	font-size: 1.2rem;
+	transition: all .4s ease-in;
+}
+
 nav ul li{
 	display: inline-block;
 	color: #ccc;
@@ -227,8 +243,7 @@ nav ul{
 	padding: 0;	
 }
 
-
-
+/*---------------------------*/
 
 th, td{
 	border: 1px solid white;
