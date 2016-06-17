@@ -100,8 +100,12 @@ form button{
 }
 
 
-@media(max-width: 1120px){
+@media(min-width:0px) and (max-width: 768px) {
 
+	.submit-btn{
+		position: fixed;
+		margin: 0 auto; 
+	}
 }
 
 @media (min-width: 768px){

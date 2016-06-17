@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="myNav">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -32,9 +32,17 @@
         <a href="top20.html"><li>TOP 20 ARTISTS</li></a>
         <a href=""><li>GLOBAL EVENTS</li></a>
         <a href="about.html"><li>ABOUT</li></a>
-        <a href="#"data-toggle="modal"data-target="#login-form"><li id="login-btn">MY ACCOUNT</li></a>
+
+        <!-- Login Dropdown btn -->
+          <a href="#" class="dropdown-toggle" id="user-login" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><li>Hello, Miles<span class="caret"></span></li>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Message</a></li>
+              <li><a href="#">Setting</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </a>
       </ul>
-      
     </div>
   </div>
 </nav>

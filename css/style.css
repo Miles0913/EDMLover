@@ -83,11 +83,27 @@ button{
 
 /*Log in btn and form */
 
+.dropdown-menu li a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-menu li a{
+	font-size: 1.2rem;
+	color: #1b6aff;
+}
+
+.dropdown-menu{
+	color: #ddf6ff;
+}
+
 #login-btn:hover{
 	background-color: #ccccff;
 	color:#000;
 	transition: all .2s ease-in;
 }
+
+/*----------------------*/
 
 .contact-form h3{
 	float: left;
@@ -102,7 +118,7 @@ textarea.form-control {
     height: 10rem;
 }
 
-/*----------------------*/
+
 
 .contact-form{
 	min-width: 400px;
@@ -195,10 +211,6 @@ a{
 
 /*Nav Bar*/
 
-.container-fluid{
-	padding-right: 4rem;
-}
-
 .dropdown-toggle:hover{
 	color: white;
 }
@@ -242,6 +254,27 @@ nav ul{
 	margin: 0;
 	padding: 0;	
 }
+
+/*---------Mobile Login dropdown menu*/
+.dropdown-menu {
+	background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 170px;
+    padding: 0px 0;
+    margin: 0px 0 0;
+    font-size: 0px;
+    text-align: right;
+    list-style: none;
+    border-radius: 0px;
+    
+}
+
+
 
 /*---------------------------*/
 
@@ -311,6 +344,10 @@ table {
 	padding-bottom: 5rem;
 }
 
+#top20-nav{
+	float: left;
+}
+
 .top20_content img{
 	margin: 20px auto;
 	display: block;
@@ -318,7 +355,7 @@ table {
  	border-radius: 2px;
 }
 
-.top20_content p{
+.top20art_content p{
 	font-size: 15px;
 	color: white;
 	margin: 25px 5px 20px 25px;
@@ -461,14 +498,14 @@ footer ul li{
 }
 
 @media(max-width: 1120px){
-/*	.navbar-nav{
+	.navbar-nav{
 		margin-top: 1rem;
 	}
 	.poster-wrapper h2{
 		font-size: 2rem;
-	}*/
+	}
 }
-
+ 
 @media (min-width: 768px){
 /*    .navbar-nav{
        margin: 0;
@@ -498,3 +535,5 @@ footer ul li{
     border-bottom: 1px solid #666;
   	}
 }
+
+@media (min-width: 0px) and 

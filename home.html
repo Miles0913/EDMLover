@@ -43,9 +43,21 @@
         <a href="top20.html"><li>TOP 20 ARTISTS</li></a>
         <a href=""><li>GLOBAL EVENTS</li></a>
         <a href="about.html"><li>ABOUT</li></a>
-        <a href="#" data-toggle="modal" data-target="#login-form"><li id="login-btn">MY ACCOUNT</li></a>
-      </ul>
-     
+
+        <!-- Login Dropdown btn -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><li>Hello, Miles<span class="caret"></span></li></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <br>
+              <li><a href="#">Message</a></li>
+              <br>
+              <li><a href="#">Share List <span class="badge">2</span></a></li>
+              <br>
+              <li><a href="#">Setting</a></li>
+              <br>
+              <li><a href="#">Log Out</a></li>
+            </ul> 
+        </ul>
     </div>
   </div>
 </nav>
@@ -201,7 +213,21 @@
                 <br>
                 <input class="form-control" name="email" type="email" placeholder="Email" required=""></input>
                 <br>
-                <input class="form-control" name="phone" type="pehone" placeholder="Phone Number" required=""></input>
+                <input class="form-control" name="phone" type="phone" placeholder="Phone Number" required=""></input>
+                <br>
+                <select class="form-control" name="type" placeholder="Country">
+                  <option value="">Country</option>
+                  <option value="">Argentina</option>
+                  <option value="">Brasil</option>
+                  <option value="">Canada</option>
+                  <option value="">Croatia</option>
+                  <option value="">Japan</option>
+                  <option value="">Korea</option>
+                  <option value="">Spain</option>
+                  <option value="">South Africa</option>
+                  <option value="">Republic of Singapore</option>
+                  <option value="">United States</option>
+                </select>
                 <br>
                 <textarea class="form-control" name="massage" cols="30" rows="10" placeholder="Message"></textarea>
                 <br>
