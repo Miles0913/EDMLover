@@ -11,7 +11,7 @@
 
 
 html, body{
-	height: 100%;
+	/*height: 100%;*/
 	background: url(../img/bg6.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -31,7 +31,8 @@ html, body{
 }
 
 body{
-	/*height:100%;*/
+
+	height:auto;
 	margin-top: 7rem;
 	font-family: Helvetica;
 	font-size: 12px;	
@@ -330,25 +331,41 @@ table {
 	cursor: pointer;
 }
 
-.left_nav_wrapper h1{
+.left_nav h1{
 	font-family: 'Playball-Regular', cursive;
 	margin-left: -2rem;
-	margin-top: 6rem;
-	color:white;	
+	width: 200px;	
 }
 
 .left_nav{
-	margin-left: 5rem;
+	position: fixed;
+	overflow-y:scroll;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	margin-left: 2rem;
 	margin-top: 2rem;
 	width: 200px;
 	padding-bottom: 5rem;
+
 }
 
-#top20-nav{
-	float: left;
+#top-20{
+/*	display: flex;
+	overflow: hidden;*/
+/*	height: auto;*/
+/*	position: relative;
+	width: 100%;*/
+	
 }
 
-.top20_content img{
+.top20art_content{
+/*	top: 0;
+	bottom: 0;*/
+	margin-bottom:5rem; 
+}
+
+.top20art_content img{
 	margin: 20px auto;
 	display: block;
  	width: 500px; 
@@ -368,8 +385,8 @@ table {
 	margin-top: 5rem;
 	margin-right: 5rem;
 	float: right;
-	width: 900px;
-	height: 800px;
+	width: 150%;
+	height: auto;
 
 }
 
@@ -379,8 +396,8 @@ table {
 	margin-top: 11rem;
 	margin-right: 5rem;
 	float: right;
-	width: 900px;
-	height: 750px;
+	width: 150%;
+	height: auto;
 }
 
 .martin_content{
@@ -388,11 +405,11 @@ table {
 	background:rgba(0,0,0,.6);
 	margin-top: 11rem;
 	margin-right: 5rem;
+	margin-bottom:5rem;
 	float: right;
-	width: 900px;
-	height: 750px;
+	width: 150%;
+	height: auto;
 }
-
 
 
 /*-----------------*/
@@ -534,6 +551,5 @@ footer ul li{
     border: none;
     border-bottom: 1px solid #666;
   	}
-}
 
-@media (min-width: 0px) and 
+}
