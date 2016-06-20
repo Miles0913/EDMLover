@@ -4,7 +4,7 @@
 var myVar;
 
 function myFunction(){
-	myVar = setTimeout(showPage, 3500);
+	myVar = setTimeout(showPage, 4000);
 }
 
 function showPage(){
