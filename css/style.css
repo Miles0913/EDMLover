@@ -106,6 +106,63 @@ button{
 
 /*----------------------*/
 
+/*Submit Sharing Request Loading Animation*/
+#loader{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #3498db;
+	border-top: 16px solid #f3f3f3;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin{
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin{
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+/*Add animation to "page content"*/
+.animate-bottom{
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom{
+	from {bottom: -100px; opacity:0}
+	to {bottom: 0px; opacity:1}
+}
+
+@keyframes animatebottom{
+	from {bottom: -100px; opacity: 0}
+	to {bottom: 0px; opacity: 1}
+}
+
+#myDiv{
+	display: none;
+	text-align: center;
+}
+	
+
+
+/*---------------------*/
+
+
+
+
 .contact-form h3{
 	float: left;
 	color:black;
@@ -228,6 +285,7 @@ nav ul li{
 	font-size: 1.2rem;
 	/*border: 1px solid white;*/
 	padding: 1rem;
+	margin-top: 1rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	/*border-radius: 5px;*/
@@ -514,7 +572,7 @@ footer ul li{
   and (min-resolution: 192dpi) { 
 }
 
-@media(max-width: 1120px){
+/*@media(max-width: 1120px){
 	.navbar-nav{
 		margin-top: 1rem;
 	}
@@ -522,21 +580,21 @@ footer ul li{
 		font-size: 2rem;
 	}
 }
- 
-@media (min-width: 768px){
+ */
+/*@media (min-width: 768px){*/
 /*    .navbar-nav{
        margin: 0;
        margin-top: 1rem;
     }*/
-    	.navbar-nav{
-		margin-top: 1rem;
-	}
+    /*	.navbar-nav{
+		margin-top: 1rem;*/
+/*	}
 	.poster-wrapper h2{
 		font-size: 2rem;
 	}
-}
+}*/
 
-@media (max-width: 767px){
+/*@media (max-width: 767px){
 	.poster-wrapper h2{
 	font-size: 3rem;	
 	}
@@ -552,4 +610,43 @@ footer ul li{
     border-bottom: 1px solid #666;
   	}
 
+}*/
+/* Big Screen */
+@media (min-width: 1200px) { 
+	.poster-wrapper h2{
+		font-size: 2rem;
+	}
 }
+ 
+/* Tablet、Portrait on and noraml desktop resolution */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@media (max-width: 767px) {
+	.poster-wrapper h2{
+	font-size: 3rem;	
+	}
+	.poster-wrapper{
+	width:100%;
+	}
+	nav ul li {
+	font-size: 1rem;
+    width: 100%;
+    padding-right:3rem;
+    margin: 
+    border: none;
+    border-bottom: 1px solid #666;
+  	}
+  	.top20art_content{
+  	width: 40%;
+    float: right;
+    position: relative;
+    left: 56px;
+  	}
+  	.top20art_content img{
+  	width: 100%;
+  	}
+}
+ 
+/* 橫向智慧手機及其他更小解析度 */
+@media (max-width: 480px) { ... }

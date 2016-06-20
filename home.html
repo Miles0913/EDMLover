@@ -6,7 +6,6 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-1.12.3.min.js">
@@ -51,7 +50,7 @@
               <br>
               <li><a href="#">Message</a></li>
               <br>
-              <li><a href="#">Share List <span class="badge">2</span></a></li>
+              <li><a href="#">Share List</a></li>
               <br>
               <li><a href="#">Setting</a></li>
               <br>
@@ -97,11 +96,6 @@
         </div>
       </div>
     </div>   
-
-   <!--  <div class="banner">
-    	<img src="img/inception_banner.jpg" alt="banner">
-    </div> -->
-
 
     <!--Upper Banner Slideer -->
     <div id="carousel-example-generic" class="carousel slide banner-slider" data-ride="carousel">
@@ -209,7 +203,7 @@
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
               <form action="" class="contact-form">
-                <input class="form-control" name="username" type="text" placeholder="Name" required="">
+                <input class="form-control" name="username" type="text" placeholder="Name" required=""></input>
                 <br>
                 <input class="form-control" name="email" type="email" placeholder="Email" required=""></input>
                 <br>
@@ -237,11 +231,35 @@
 
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Submit Request</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#loading">Submit Request</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Build After Submit Animation -->
+    <div class="modal fade" id="loading" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Sumbit Progress</h4>
+          </div>
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <body onload = "myFunction()" style="margin:0;">
+              <div id="loader"></div>
+              <div style="display: none;" id="myDiv" class="animate-bottom">
+              <h2>Submitted!</h2>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <!---->
 
     <!-- Mid Tomorrowland Pop-up Windows -->
     <div class="modal fade" id="tomorrowland-poster" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
