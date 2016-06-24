@@ -10,17 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-1.12.3.min.js">
 </head>
-<body>
-<!--   <nav>
-   <ul>
-    <a href="index.html"><li>Home</li></a>
-    <a href="ticket.html"><li>Share Your Trip</li></a>
-    <a href="about.html"><li>Global Events</li></a>
-    <a href="contact.html"><li>Local Events</li></a>
-    <a href="contact.html"><li>Dj's News</li></a>
-  </ul>
-</nav> -->
 
+<body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" id="myNav">
   <div class="container-fluid">
@@ -32,16 +23,19 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="home.html">
-        <img src="img/icon.png" alt="Movie">
+        <img src="img/edm-logo-01.png" id="edm-logo" alt="Movie">
       </a>
     </div>
+
+   
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="mobile-nav">
       <ul class="nav navbar-nav navbar-right">
-        <a href="request.html"><li>REQUEST SHARING TRIP</li></a>
+        <a href="request.html"><li>SHARING TRIP</li></a>
         <a href="top20.html"><li>TOP 20 ARTISTS</li></a>
         <a href=""><li>GLOBAL EVENTS</li></a>
-        <a href="about.html"><li>ABOUT</li></a>
+        <a href="shop.html"><li>SHOP</li></a>
 
         <!-- Login Dropdown btn -->
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><li>Hello, Miles<span class="caret"></span></li></a>
@@ -203,7 +197,7 @@
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
               <form action="" class="contact-form">
-                <input class="form-control" name="username" type="text" placeholder="Name" required=""></input>
+                <input class="form-control" name="username" type="username" placeholder="Name" required=""></input>
                 <br>
                 <input class="form-control" name="email" type="email" placeholder="Email" required=""></input>
                 <br>
@@ -242,22 +236,20 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4>Sumbit Progress</h4>
           </div>
           <div class="modal-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <body onload = "myFunction()" style="margin:0;">
+            <div class="embed-responsive embed-responsive-16by9" id="loader-body">
+              <body onload = "myFunction()">
               <div id="loader"></div>
               <div style="display: none;" id="myDiv" class="animate-bottom">
               <h2>Submitted!</h2>
               </div>
             </div>
           </div>
-          
         </div>
-        
       </div>
-      
     </div>
     <!---->
 
@@ -309,7 +301,7 @@
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Submit Request</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#loading">Submit Request</button>
           </div>
         </div>
       </div>
@@ -363,7 +355,7 @@
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Submit Request</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#loading">Submit Request</button>
           </div>
         </div>
       </div>

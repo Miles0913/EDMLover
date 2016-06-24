@@ -12,3 +12,11 @@ function showPage(){
 	document.getElementById("myDiv").style.display = "block";
 }
 
+$(function(){
+	$('#sharing-nav').on('onmouseover', function(){
+		$('#sharing-nav').addClass('animate shake');
+
+});
+});
+
+$('#sharing-nav a').addClass('animated bounceOutLeft');

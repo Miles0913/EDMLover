@@ -110,18 +110,16 @@ button{
 #loader{
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 70%;
 	z-index: 1;
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	margin: -75px 0 0 -75px;
-	border: 16px solid #3498db;
-	border-top: 16px solid #f3f3f3;
+	border: 15px solid #3498db;
+	border-top: 15px solid #f3f3f3;
 	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	-webkit-animation: spin 3s linear infinite;
-	animation: spin 3s linear infinite;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin{
@@ -138,7 +136,7 @@ button{
 .animate-bottom{
 	position: relative;
 	-webkit-animation-name: animatebottom;
-	animation-duration: 1s;
+	animation-duration: 2s;
 }
 
 @-webkit-keyframes animatebottom{
@@ -156,12 +154,33 @@ button{
 	text-align: center;
 }
 	
-
+#loader-body{
+    padding-bottom: 18.25%;
+}
 
 /*---------------------*/
 
 
+/*Sharing Trip Page*/
 
+#sharing-nav a{
+	color: white;
+	cursor: pointer;
+}
+
+#sharing-nav{
+	font-size: 2rem;
+	text-align: center;
+	background-color: rgb(0,0,0);
+}
+
+.share-content{
+	width: 100%;
+	height: 1000px;
+	background-color: #fff;
+}
+
+/*==================*/
 
 .contact-form h3{
 	float: left;
@@ -175,8 +194,6 @@ button{
 textarea.form-control {
     height: 10rem;
 }
-
-
 
 .contact-form{
 	min-width: 400px;
@@ -201,6 +218,7 @@ textarea.form-control {
 	position: relative;
     left: -4rem;
 }
+
 #create_btn{
 	margin-top: 8rem;
 }
@@ -267,7 +285,7 @@ a{
 	color: white;
 }
 
-/*Nav Bar*/
+/*Navigation Bar*/
 
 .dropdown-toggle:hover{
 	color: white;
@@ -283,14 +301,12 @@ nav ul li{
 	display: inline-block;
 	color: #ccc;
 	font-size: 1.2rem;
-	/*border: 1px solid white;*/
 	padding: 1rem;
 	margin-top: 1rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
-	/*border-radius: 5px;*/
 	cursor: pointer;
-	transition: all .4s ease-in;
+	transition: all .2s ease-in;
 }
 
 nav ul li:hover	{
@@ -298,23 +314,18 @@ nav ul li:hover	{
 }
 
 nav{
-	/*background-color: #000000;
-	padding: 1px;*/
+
 	text-align: right;
-/*	position: fixed;
-	width:100%;
-	height: 8%;
-	top: 0;
-	z-index: 1;*/
 }
 
 
-nav ul{
-	margin: 0;
-	padding: 0;	
+.navbar-brand {
+	width: 150px;
+	height: 100%;
+
 }
 
-/*---------Mobile Login dropdown menu*/
+/*---------Mobile Login dropdown menu------------*/
 .dropdown-menu {
 	background-color: #fff;
     position: absolute;
