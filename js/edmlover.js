@@ -20,3 +20,9 @@ $(function(){
 });
 
 $('#sharing-nav a').addClass('animated bounceOutLeft');
+
+//Wishlist
+function myFunction(){
+	var wishBtn = document.getElementById("wish");
+    .color="red";
+}
