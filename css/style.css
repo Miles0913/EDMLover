@@ -155,7 +155,7 @@ button{
 }
 	
 #loader-body{
-    padding-bottom: 18.25%;
+    padding-bottom: 25.25%;
 }
 
 /*---------------------*/
@@ -174,10 +174,27 @@ button{
 	background-color: rgb(0,0,0);
 }
 
+.share-content h2{
+	text-align: center;
+}
+
 .share-content{
 	width: 100%;
 	height: 1000px;
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.thumbnail p{
+	font-size: 1.5rem;
+}
+
+.thumbnail{
+	margin: 3rem;
+}
+
+#ultra-logo{
+	margin: 5% 40% 0 40%;
+	width: 20%;
 }
 
 /*==================*/
@@ -223,9 +240,9 @@ textarea.form-control {
 	margin-top: 8rem;
 }
 
-.modal-body {
+#request-form{
     position: relative;
-    padding: 0px;
+    padding: 0;
 }
 
 
@@ -389,66 +406,58 @@ table {
 
 
 /*-----------------Top 20 Artists----------------------*/
-.left_nav img{
+.left-nav img{
 	margin-bottom: 1rem;
 	opacity: .8;
 	transition: .2s ease-in opacity;
 }
 
-.left_nav img:hover{
+.left-nav img:hover{
 	opacity: 2;
 	cursor: pointer;
 }
 
-.left_nav h1{
+.left-nav h1{
 	font-family: 'Playball-Regular', cursive;
 	margin-left: -2rem;
 	width: 200px;	
 }
 
-.left_nav{
+.left-nav{
 	position: fixed;
 	overflow-y:scroll;
 	top: 0;
 	bottom: 0;
 	height: auto;
 	margin-left: 2rem;
-	margin-top: 2rem;
-	width: 200px;
+	margin-top: 6rem;
+	width: 15%;
 	padding-bottom: 5rem;
 
 }
 
-#top-20{
-/*	display: flex;
-	overflow: hidden;*/
-/*	height: auto;*/
-/*	position: relative;
-	width: 100%;*/
-	
-}
 
-.top20art_content{
+.top20art-content{
 /*	top: 0;
 	bottom: 0;*/
 	margin-bottom:5rem; 
 }
 
-.top20art_content img{
+.top20art-content img{
 	margin: 20px auto;
 	display: block;
  	width: 500px; 
  	border-radius: 2px;
 }
 
-.top20art_content p{
+.top20art-content p{
 	font-size: 15px;
 	color: white;
 	margin: 25px 5px 20px 25px;
     padding: 0 16px;
 }
 
-.dvlm_content{
+.dvlm-content{
 	background-color: #ccc;
 	background:rgba(0,0,0,.6);
 	margin-top: 5rem;
@@ -459,7 +468,7 @@ table {
 
 }
 
-.hardwell_content{
+.hardwell-content{
 	background-color: #ccc;
 	background:rgba(0,0,0,.6);
 	margin-top: 11rem;
@@ -469,7 +478,7 @@ table {
 	height: auto;
 }
 
-.martin_content{
+.martin-content{
 	background-color: #ccc;
 	background:rgba(0,0,0,.6);
 	margin-top: 11rem;
@@ -504,7 +513,7 @@ table {
 	margin-right: auto;
 	background-color:rgba(0,0,0,0.5);
 }
-/*-----------------About html style----------------------*/
+/*----*/
 
 
 /*-----------------Footer style----------------------*/
@@ -568,20 +577,20 @@ footer ul li{
 
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
-}
+}*/
 
 /* ----------- Retina Screens ----------- */
-@media screen 
+/*@media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
-}
+}*/
 
 /*@media(max-width: 1120px){
 	.navbar-nav{
@@ -630,10 +639,22 @@ footer ul li{
 }
  
 /* Tablet、Portrait on and noraml desktop resolution */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) { 
+		
+
+
+}
  
 /* 橫向智慧手機到竪立平板電腦解析度 */
 @media (max-width: 767px) {
+	/*index page*/
+  	.sumbit-btn{
+  		margin-left: 5rem;
+  	}
+
+
+  
+
 	.poster-wrapper h2{
 	font-size: 3rem;	
 	}
@@ -644,7 +665,7 @@ footer ul li{
 	font-size: 1rem;
     width: 100%;
     padding-right:3rem;
-    margin: 
+    margin: 0;
     border: none;
     border-bottom: 1px solid #666;
   	}
@@ -657,7 +678,51 @@ footer ul li{
   	.top20art_content img{
   	width: 100%;
   	}
+
+
 }
  
 /* 橫向智慧手機及其他更小解析度 */
-@media (max-width: 480px) { ... }
+@media (max-width: 480px) { 
+		#login-page{
+  		height: 70%;
+  		}
+
+  		.share-content{
+  			height: auto;
+  		}
+
+  		.left-nav{
+  			padding: 1rem;
+  			margin: 0;
+  			width: 100%;
+  			position: inherit;
+  		}
+  		.top20art-content{
+  			width: auto;
+  		}
+  		.left-nav h1 {
+    	width: 278px;
+    	}
+ 
+    	.dvlm-content h1 ,p{
+  		padding:0 3rem 0 3rem; 
+  		color: white;
+		}
+    	.dvlm-content {
+    	margin-right: 0rem;
+   		width: 100%;
+    	height: auto;
+		}
+		.hardwell-content {
+		margin-right: 0rem;
+   		width: 100%;
+    	height: auto;
+		}
+		.martin-content{
+		margin-right: 0rem;
+   		width: 100%;
+    	height: auto;
+		}
+
+}
