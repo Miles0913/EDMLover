@@ -457,6 +457,24 @@ table {
     padding: 0 16px;
 }
 
+.dvlm-content p{
+	font-size: 1.5rem;
+	color: white;
+	padding: 1rem 5rem 1rem 5rem;
+}
+
+.hardwell-content p{
+	font-size: 1.5rem;
+	color: white;
+	padding: 1rem 5rem 1rem 5rem;
+}
+
+.martin-content p{
+	font-size: 1.5rem;
+	color: white;
+	padding: 1rem 5rem 1rem 5rem;
+}
+
 .dvlm-content{
 	background-color: #ccc;
 	background:rgba(0,0,0,.6);
@@ -465,7 +483,6 @@ table {
 	float: right;
 	width: 150%;
 	height: auto;
-
 }
 
 .hardwell-content{
@@ -704,16 +721,21 @@ footer ul li{
   		.left-nav h1 {
     	width: 278px;
     	}
- 
-    	.dvlm-content h1 ,p{
-  		padding:0 3rem 0 3rem; 
+
+    	.dvlm-content p{
+  		padding:1rem 3rem 0 3rem; 
   		color: white;
+		}
+ 
+    	.dvlm-content h1{
+  		padding:0 3rem 0 3rem; 
 		}
     	.dvlm-content {
     	margin-right: 0rem;
    		width: 100%;
     	height: auto;
 		}
+
 		.hardwell-content {
 		margin-right: 0rem;
    		width: 100%;
@@ -724,5 +746,6 @@ footer ul li{
    		width: 100%;
     	height: auto;
 		}
+
 
 }
