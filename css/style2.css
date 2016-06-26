@@ -92,6 +92,32 @@ video {
 	text-decoration: underline;
 }
 
+/*.contact-form{
+	padding: 20px;
+}
+
+textarea.form-control {
+    height: 10rem;
+}*/
+
+/*.contact-form{
+	min-width: 400px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+.btn-blue{
+	margin-left: 1.5rem;
+	background-color: #0D95FF;
+	float: right;
+}
+
+.btn-blue:hover{
+	background-color: #0D95FF;
+	/*font-size: 1.5rem;*/
+}
+
 form button{
 	background: #1fe07f;
 	color: #fff;

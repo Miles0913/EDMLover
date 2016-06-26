@@ -21,8 +21,16 @@ $(function(){
 
 $('#sharing-nav a').addClass('animated bounceOutLeft');
 
-//Wishlist
-function myFunction(){
-	var wishBtn = document.getElementById("wish");
-    .color="red";
-}
+//Wishlist btn Change Color
+// function changeColor(e)
+// {
+// e.style.backgroundColor="gray";
+// }
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $('#wish-btn').addClass("wish-btn", function(backgroundColor:gray));
+    });
+});
+
+

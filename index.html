@@ -39,12 +39,49 @@
           <input type="password" placeholder="Password">
       </div>
       <div class="submit-btn">
-        <button type="submit">Sign Up</button>
+        <button type="button"  data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#login-form">Sign Up</button>
         <button type="submit">Log In</button>
+      </div>
       </div>
     </form>
   </div>
 </div>
+
+  <!-- Log In Pop-up Windows -->
+  <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Welcome To My EDMLover Account</h4>
+        </div>
+
+        <div class="modal-body" id="login-form">
+          <div class="embed-responsive embed-responsive-16by9">
+            <form action="" class="contact-form">
+              <input class="form-control" name="username" type="text" placeholder="UserName" required=""></input>
+              <br>
+              <input class="form-control" name="password" type="password" placeholder="Password" required=""></input>
+              <br>
+              <button type="sumbit" class="btn-blue"><a href="login.html">Submit</a></button> 
+              <br>
+              <h3>Don't Have Account?</h3>
+              <div class="create_detail">
+                <ul>
+                  <li>Store information for faster checkout</li>
+                  <li>Private message</li> 
+                  <li>Manage your favorites DJ</li>
+                  <li>Post event reviews</li>
+                  <li>Manage your favorites</li> 
+                </ul>
+              </div>
+              <button type="sumbit" class="btn-blue" id="create_btn">Create Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
 
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
